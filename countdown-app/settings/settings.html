@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>倒计时设置</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <div class="settings-panel">
+    <h2>倒计时设置</h2>
+
+    <div class="form-group">
+      <label for="inputTitle">事件名称</label>
+      <input type="text" id="inputTitle" placeholder="例如：生日、新年、考试" maxlength="20">
+    </div>
+
+    <div class="form-group">
+      <label for="inputDate">目标日期</label>
+      <input type="date" id="inputDate">
+    </div>
+
+    <div class="form-group">
+      <label>字体大小 <span id="fontSizeVal">26px</span></label>
+      <input type="range" id="inputFontSize" min="16" max="48" value="26" step="1">
+    </div>
+
+    <div class="form-group">
+      <label>主题颜色</label>
+      <div class="color-row">
+        <input type="color" id="inputColor" value="#64B5F6">
+        <span class="color-hex" id="colorHex">#64B5F6</span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>背景不透明度 <span id="opacityVal">75%</span></label>
+      <input type="range" id="inputOpacity" min="0.2" max="1" value="0.75" step="0.05">
+    </div>
+
+    <div class="form-group toggle-group">
+      <label for="inputShowSeconds">显示秒数</label>
+      <label class="switch">
+        <input type="checkbox" id="inputShowSeconds" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="form-group toggle-group">
+      <label for="inputAlwaysOnTop">始终置顶</label>
+      <label class="switch">
+        <input type="checkbox" id="inputAlwaysOnTop" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="form-group toggle-group">
+      <label for="inputLockPosition">锁定位置</label>
+      <label class="switch">
+        <input type="checkbox" id="inputLockPosition">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="form-group toggle-group">
+      <label for="inputAutoStart">开机自启</label>
+      <label class="switch">
+        <input type="checkbox" id="inputAutoStart">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="form-group size-group">
+      <label>窗口尺寸</label>
+      <div class="size-row">
+        <input type="number" id="inputWinW" min="240" max="800" step="10" class="size-input">
+        <span class="size-sep">×</span>
+        <input type="number" id="inputWinH" min="100" max="500" step="10" class="size-input">
+        <button class="btn btn-small" id="btnResetSize">重置</button>
+      </div>
+    </div>
+
+    <div class="hint">
+      右键点击倒计时窗口可快速访问菜单<br>
+      双击倒计时窗口打开设置
+    </div>
+
+    <div class="button-row">
+      <button class="btn btn-primary" id="btnSave">保存并关闭</button>
+      <button class="btn btn-secondary" id="btnCancel">取消</button>
+    </div>
+  </div>
+  <script src="settings.js"></script>
+</body>
+</html>

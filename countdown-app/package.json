@@ -1,0 +1,28 @@
+{
+  "name": "countdown-widget",
+  "version": "1.0.0",
+  "description": "桌面日期倒计时挂件",
+  "main": "main.js",
+  "scripts": {
+    "start": "node start.js",
+    "build": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.countdown.widget",
+    "productName": "倒计时挂件",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "assets/icon.ico"
+    },
+    "portable": {
+      "artifactName": "CountdownWidget.exe"
+    }
+  }
+}

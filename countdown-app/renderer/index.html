@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>倒计时</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="title-row">
+      <span class="prefix">距离</span>
+      <span class="event-title" id="eventTitle">新年</span>
+      <span class="suffix">还有</span>
+    </div>
+
+    <div class="countdown-row" id="countdownRow">
+      <div class="time-unit">
+        <span class="num" id="days">0</span>
+        <span class="lbl">天</span>
+      </div>
+      <div class="time-unit">
+        <span class="num" id="hours">00</span>
+        <span class="lbl">时</span>
+      </div>
+      <div class="time-unit">
+        <span class="num" id="minutes">00</span>
+        <span class="lbl">分</span>
+      </div>
+      <div class="time-unit" id="secondsUnit">
+        <span class="num" id="seconds">00</span>
+        <span class="lbl">秒</span>
+      </div>
+    </div>
+
+    <div class="date-row" id="dateRow"></div>
+    <div class="status-row" id="statusRow"></div>
+    <div class="resize-grip"></div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
