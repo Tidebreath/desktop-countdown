@@ -14,7 +14,8 @@
 
 ## 截图
 
-> 替换为你的截图
+<img width="492" height="192" alt="image" src="https://github.com/user-attachments/assets/0c098926-794e-4a51-b14b-753825fb8d9f" />
+
 
 ## 运行
 
